@@ -31,6 +31,9 @@ router.get('/vipList', function(req, res, next) {
 router.get('/buy', function(req, res, next) {
 	res.render('buy', {})
 })
+router.get('/zhuanpan', function(req, res, next) {
+	res.render('zhuanpan', {})
+})
 
 router.get('/apply', function(req, res, next) {
 	console.log(req.cookies.data)

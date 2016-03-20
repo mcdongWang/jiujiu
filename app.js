@@ -67,6 +67,7 @@ app.use("/exchange", routes)
 app.use("/vipList", routes)
 app.use("/buy", routes)
 app.use("/xieyi", routes)
+app.use("/zhuanpan", routes)
 
 
 // catch 404 and forward to error handler
