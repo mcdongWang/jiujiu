@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css" media="screen">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h2>增加物料选项</h2>
+            <form method="post" onsubmit="return false">
+                <input class="col-sm-4" id="thingName">
+                <input class="col-sm-2 col-sm-offset-1 button" type="submit">
+            </form>
+          </div>
+          <div class="col-md-8 col-md-offset-2">
+            <h2>增加组别选项</h2>
+            <form method="post" onsubmit="return false">
+                <input class="col-sm-4" id="groupName">
+                <input class="col-sm-2 col-sm-offset-1 button1" type="submit">
+            </form>
+          </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="javascripts/jquery.min.js"></script>
+<script type="text/javascript">
+    $btn = $('.button').click(function(event){
+        event.preventDefault()
+        console.log($('#thingName').val())
+        $.post('/add', {'name' : $('#thingName').val()}, function(data){
+            $('#thingName').val('')
+            if(data == 'OK'){
+                alert('添加成功')
+            }else{
+                alert('添加失败')
+            }
+        })
+    })
+    $btn1 = $('.button1').click(function(event){
+        event.preventDefault()
+        console.log($('#groupName').val())
+        $.post('/addGroup', {'name' : $('#groupName').val()}, function(data){
+            $('#groupName').val('')
+            if(data == 'OK'){
+                alert('添加成功')
+            }else{
+                alert('添加失败')
+            }
+        })
+    })
+</script>
+</html>
