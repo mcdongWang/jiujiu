@@ -16,7 +16,20 @@ router.get('/', function(req, res, next) {
 	}
 });
 
-router.get('/apply', function(req, res, netx) {
+router.get('/userInfo', function(req, res, next) {
+	res.render('userInfo', {})
+})
+router.get('/exchange', function(req, res, next) {
+	res.render('exchange', {})
+})
+router.get('/xieyi', function(req, res, next) {
+	res.render('xieyi', {})
+})
+router.get('/vipList', function(req, res, next) {
+	res.render('vipList', {})
+})
+
+router.get('/apply', function(req, res, next) {
 	console.log(req.cookies.data)
 	res.render('apply', {
 		title: '办公物品申请',
@@ -24,7 +37,7 @@ router.get('/apply', function(req, res, netx) {
 	})
 })
 
-router.get('/workList', function(req, res, netx) {
+router.get('/workList', function(req, res, next) {
 	// console.log(req.cookies.data)
 	res.render('workList', {
 		title: '办公物品申请'

@@ -9,8 +9,8 @@
 6 silly lifecycle test@0.0.0~prestart: no script for prestart, continuing
 7 info lifecycle test@0.0.0~start: test@0.0.0
 8 verbose lifecycle test@0.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle test@0.0.0~start: PATH: /Users/mcdong/.nvm/versions/node/v5.2.0/lib/node_modules/npm/bin/node-gyp-bin:/Users/mcdong/waibao/oa/nodejs_express_login_register/test/node_modules/.bin:/Users/mcdong/.nvm/versions/node/v5.2.0/bin:/Users/mcdong/.ssh:/Applications/mongodb/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
-10 verbose lifecycle test@0.0.0~start: CWD: /Users/mcdong/waibao/oa/nodejs_express_login_register/test
+9 verbose lifecycle test@0.0.0~start: PATH: /Users/mcdong/.nvm/versions/node/v5.2.0/lib/node_modules/npm/bin/node-gyp-bin:/Users/mcdong/waibao/mean/node_modules/.bin:/Users/mcdong/.nvm/versions/node/v5.2.0/bin:/Users/mcdong/.ssh:/Applications/mongodb/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+10 verbose lifecycle test@0.0.0~start: CWD: /Users/mcdong/waibao/mean
 11 silly lifecycle test@0.0.0~start: Args: [ '-c', 'node ./bin/www' ]
 12 silly lifecycle test@0.0.0~start: Returned: code: 1  signal: null
 13 info lifecycle test@0.0.0~start: Failed to exec start script
@@ -25,7 +25,7 @@
 14 verbose stack     at maybeClose (internal/child_process.js:819:16)
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:212:5)
 15 verbose pkgid test@0.0.0
-16 verbose cwd /Users/mcdong/waibao/oa/nodejs_express_login_register/test
+16 verbose cwd /Users/mcdong/waibao/mean
 17 error Darwin 15.0.0
 18 error argv "/Users/mcdong/.nvm/versions/node/v5.2.0/bin/node" "/Users/mcdong/.nvm/versions/node/v5.2.0/bin/npm" "start"
 19 error node v5.2.0

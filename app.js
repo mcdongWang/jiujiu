@@ -62,6 +62,11 @@ app.use("/orderAll", routes)
 app.use("/orderApply", routes)
 app.use("/workList", routes)
 app.use("/workDone", routes)
+app.use("/userInfo", routes)
+app.use("/exchange", routes)
+app.use("/vipList", routes)
+app.use("/buy", routes)
+app.use("/xieyi", routes)
 
 
 // catch 404 and forward to error handler
