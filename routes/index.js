@@ -28,6 +28,9 @@ router.get('/xieyi', function(req, res, next) {
 router.get('/vipList', function(req, res, next) {
 	res.render('vipList', {})
 })
+router.get('/buy', function(req, res, next) {
+	res.render('buy', {})
+})
 
 router.get('/apply', function(req, res, next) {
 	console.log(req.cookies.data)
